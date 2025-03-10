@@ -133,7 +133,7 @@ main {
     object-fit: cover;
 }
 
-.footer {
+footer {
     position: relative;
     background-color: var(--primary-color);
     text-align: center;
@@ -141,7 +141,7 @@ main {
     color: var(--background-color);
 }
 
-.footer .social {
+footer .social {
     position: absolute;
     right: 20px;
     top: 26px;
@@ -149,7 +149,7 @@ main {
     gap: 8px;
 }
 
-.footer .social a {
+footer .social a {
     width: 24px;
     height: 24px;
     background-color: var(--background-color);
