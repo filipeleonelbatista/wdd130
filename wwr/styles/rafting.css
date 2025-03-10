@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #346DAA;
+    --secondary-color: #183B50;
+    --accent1-color: #826548;
+    --accent2-color: #B98D5A;
+    --background-color: #FFFEFA;
+    --heading-font: 'Merriweather', serif;
+    --text-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+.hero article {
+    width: 90%;
+    display: flex;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.hero article img {
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.history article {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.history article img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: fit-content;
+}
+
+.images figure img {
+    width: 130px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    position: relative;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    color: var(--background-color);
+}
+
+.footer .social {
+    position: absolute;
+    right: 20px;
+    top: 26px;
+    display: flex;
+    gap: 8px;
+}
+
+.footer .social a {
+    width: 24px;
+    height: 24px;
+    background-color: var(--background-color);
+}
