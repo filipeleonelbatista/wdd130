@@ -166,3 +166,147 @@ footer .social a {
     height: 24px;
     background-color: var(--background-color);
 }
+
+
+/* CONTACT PAGE */
+
+
+/* Company Info Section */
+.company-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.contact-details {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+    color: #2b3d4f;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.employee-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.employee-profiles figure {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.employee-profiles figure:hover {
+    transform: translateY(-5px);
+}
+
+.employee-profiles img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-profiles figcaption {
+    font-weight: 600;
+    color: #2b3d4f;
+    margin-top: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 800px;
+    width: 100%;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    width: 100%;
+    margin-left: -1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background: #2b3d4f;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #1a2632;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .company-info {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-profiles {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
