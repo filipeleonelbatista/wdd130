@@ -51,6 +51,11 @@ main {
 
 main img {
     float: right;
+    margin: var(--spacing-2);
+}
+
+main p {
+    padding: var(--spacing-2)  var(--spacing-1);
 }
 
 aside {
@@ -74,18 +79,27 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding: 1rem;
+}
+
 /* Class Selectors */
 
 .box {
-    margin: 1rem;
+    width: 100%;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
 }
 
+ul li {
+    margin-left: var(--spacing-2);
+}
+
 aside {
     width: 20em;
+    max-width: 250px;
     text-align: center;
     position: relative;
 }
@@ -128,7 +142,7 @@ main h1 {
 
 .grid {
     display: grid;
-    align-items: center;
+    align-items: start;
 }
 
 main {
@@ -142,3 +156,4 @@ aside {
     grid-column: 1/2;
     grid-row: 1/2;
 }
+
