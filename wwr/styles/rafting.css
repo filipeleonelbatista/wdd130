@@ -41,11 +41,20 @@ p,
 section,
 article {
   margin: 16px;
-  padding: 8px;
+}
+
+.socialmedia {
+  text-align: center;
 }
 
 .socialmedia a {
   text-decoration: none;
+  margin: 0 8px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
 }
 
 .hero {
