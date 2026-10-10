@@ -244,3 +244,45 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
+.adventure-home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.adventure-home-grid img {
+  width: 100%;
+}
+
+.trips-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.trip-summary {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.trip-summary th,
+.trip-summary td {
+  padding: 0.75rem;
+  border: 1px solid var(--accent1-color);
+}
+
+.trip-summary thead {
+  color: #fff;
+  background-color: var(--accent1-color);
+}
+
+@media (max-width: 700px) {
+  .trips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-summary {
+    font-size: 0.85rem;
+  }
+}
