@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #055a05;
+  --primary-color: #112311;
   --secondary-color: #f4a261;
-  --accent1-color: #264653;
+  --accent1-color: #11232b;
   --accent2-color: #e9c46a;
   --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
@@ -285,4 +285,8 @@ footer {
   .trip-summary {
     font-size: 0.85rem;
   }
+}
+
+.cta-link {
+  color: var(--accent1-color);
 }
